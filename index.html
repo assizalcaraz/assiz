@@ -21,9 +21,14 @@
 
 
     <!-- Content -->
-    <div class="container-fluid"  id="content" style="padding-top:3%;">
+    <div class="container-fluid"   id="content" 
+        style="padding-top:3%;  display: flex;
+              align-items: center;
+              justify-content: space-between;
+              justify-content: center;">
+
       <div class="row">
-        <div class="card" style="color: azure;box-shadow: 0px 0px 10px 0px #333 inset; background: linear-gradient(0deg, rgba(34,193,195,1)0%, rgba(21,83,91,1) 100%);">
+        <div class="card" >
           <div class="card-body">
             <h5 class="card-title">Diseñador de Sonido</h5>
             <div class="row">
@@ -34,13 +39,13 @@
           </div>
         </div>
 
-        <div class="card" style="padding:auto;">
+        <div class="card">
           <div class="card-body">
             <h5 class="card-title">Desarrollo web</h5>
               <a href="https://github.com/assizalcaraz" class="card-btn">GitHub</a>
               <a href="#" class="card-btn">Blog</a>
               <a href="#" class="card-btn">Portfolio</a>
-          </div>
+            </div>    
         </div>
 
         <div class="card" style="padding:auto;">
@@ -51,13 +56,11 @@
               <a href="https://www.instagram.com/assizalcaraz/" class="card-btn">Instagram</a>
           </div>
         </div>
-
-
-
-
-
       </div>
+      
     </div>
+    <img src="/Images/homepage.gif" alt="" display="flex" style="align-items:center; justify-content: center;" >
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -65,6 +68,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <style>
+    
+      .card {
+        background-image:  url(/Images/test.gif) ;
+        
+        background-size: cover;
+        background-position: center;
+        margin: 7px;
+        align-content: space-between;        
+        
+        height: auto; 
+        width:auto; 
+        padding: 12px;  
+        color: azure;
+        box-shadow: 0px 0px 10px 0px #333 inset; 
+      };
+
       .card-btn{
         background: linear-gradient(0deg, rgba(164,182,182,0.7819502801120448) 0%, rgba(227,233,233,0.7147233893557423) 100%);
         color: whitesmoke;
@@ -72,11 +91,9 @@
         border-spacing: 15px;
         border-radius: 10%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
       };
-s
+
 
     </style>
-
   </body>
 </html>
