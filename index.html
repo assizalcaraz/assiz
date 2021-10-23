@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,25 +17,34 @@
     <!-- Header -->
     <div class="container-fluid">
       <nav class="navbar navbar-light bg-light">
-          <div>Assiz Alcaraz Baxter</div> 
+          <h3>Assiz Alcaraz Baxter</h3>  
     </div>
 
 
     <!-- Content -->
-    <div class="container-fluid"   id="content" 
-        style="padding-top:3%;  display: flex;
+    
+    <div class="container-fluid"   id="content"  
+        style="
+              background-color: rgba(50, 50, 93, 0.9);
+              padding:3%;  
+              display: flex;
               align-items: center;
               justify-content: space-between;
               justify-content: center;">
 
-      <div class="row">
-        <div class="card" >
+      <div class="row" style="box-shadow: darkgreen 7px 10px 16px ;background-image: url(/Images/test.gif); filter: grayscale(70%); padding: 50px; border-radius: 100%;">
+        <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Diseñador de Sonido</h5>
-            <div class="row">
-              <a href="https://www.invisiblesonido.com" class="card-btn">INVISIBLE</a>
-              <a href="https://www.invisiblesonido.com/assiz/" class="card-btn">CV-Reel</a>
-              <a href="https://www.imdb.com/name/nm7687037/" class="card-btn">Imdb</a>
+              <h5 class="card-title">Diseñador de Sonido</h5>
+              <div class="row">
+                <div class="card-btn">
+                  <div class="card-btn">     
+                                 
+                    <a href="https://www.invisiblesonido.com" class="card-btn">INVISIBLE Studio</a>
+                    <a href="https://www.invisiblesonido.com/assiz/" class="card-btn">CV-Reel</a>
+                    <a href="https://www.imdb.com/name/nm7687037/" class="card-btn">Imdb</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,12 +64,19 @@
               <a href="https://www.linkedin.com/in/assizalcaraz/" class="card-btn">Linkedin</a>
               <a href="https://twitter.com/assizalcaraz" class="card-btn">Twitter</a>
               <a href="https://www.instagram.com/assizalcaraz/" class="card-btn">Instagram</a>
+
+              
           </div>
         </div>
-      </div>
+        <img src="/Images/homepage.gif" style="box-shadow: rgba(50, 50, 93, 1) 3px 0px 16px;"> 
+      </div>  
+    </div>
+    
+    <div class="card" style="margin-top: 3%;">
+      Ultima Actualización: 22/10/21
+    </div>
       
     </div>
-    <img src="/Images/homepage.gif" alt="" display="flex" style="align-items:center; justify-content: center;" >
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -70,8 +87,7 @@
     <style>
     
       .card {
-        background-image:  url(/Images/test.gif) ;
-        
+        background: linear-gradient(0deg, rgba(9, 59, 92, 0.882) 0%, rgba(1, 8, 36, 0.915) 100%);
         background-size: cover;
         background-position: center;
         margin: 7px;
@@ -85,12 +101,18 @@
       };
 
       .card-btn{
-        background: linear-gradient(0deg, rgba(164,182,182,0.7819502801120448) 0%, rgba(227,233,233,0.7147233893557423) 100%);
+        background: rgb(204, 7, 7);
         color: whitesmoke;
         padding: 3%;  
         border-spacing: 15px;
         border-radius: 10%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      };
+
+      .funny{
+        display: flex;
+        align-items: center;
+        background: #333;
       };
 
 
