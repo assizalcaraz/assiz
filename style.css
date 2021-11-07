@@ -3,7 +3,7 @@
   }
 .body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 30;
     
 }
 .header {
@@ -11,65 +11,168 @@
     width: 100%;
     background: linear-gradient(45deg, rgb(187, 185, 185), white );
     margin: 0;
-    border-radius: 2%;
     
-
-    font-family:'Courier New', Courier, monospace  ;
+    border-radius: 2%;
+    padding: 8px;
+    position: sticky;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
     box-shadow: rgba(50, 50, 93, 0.2) 7px 7px 9px;
     margin-bottom: 20px ;
     color: black;
 }
-.navbar {
+/**.navbar {
     display: flex;
     align-items: center;
     overflow: hidden;
-    color: rgb(197, 197, 197);
+    color: red;
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #0d1925 74%);;
-    position: sticky;
-    position: -webkit-sticky;
+    
     top: 0;
+    padding: 12px;
     box-shadow: rgb(29, 28, 28) 0px 12px 12px;
     
   }
+
+  **/
+  
 .header-logo{
-    height: 100px;
-    width: 100px;
+    height: 98px;
+    width: 98px;
     margin: 10px;
     background-image: url(/Images/wave.gif);
     transform: rotate(30deg);
     filter: grayscale(70%);  
     border-radius: 100%;
+    box-shadow: rgba(127, 255, 212, 0.513) 7px 7px 10px ;
 }  
 .header-title{
-    flex: 30%;
+    flex: auto;
     align-items: top;
     text-align: left;
     padding-left: 15px; 
 }
 .a-icon{
+    flex: auto;
     justify-content: space-around;
     padding: 15px ;
     
 }
+.todo {
+    
+    height: 100%;
+
+    
+}
+
+/** .w3-sidebar{}**/
+
+.panel {
+    display: block;
+    align-items: center;
+    margin: 0;
+    padding: 12px;
+    width: 200px;
+    color: whitesmoke;
+    background-color: #211c42;
+    position: fixed;
+    height: 100%;
+    overflow: auto;    
+}
+
+.panel-separador-1 {
+    background-color: #211c42;
+    padding: 8px;
+    border-radius: 12px;
+    
+    
+}
+.panel-separador-2 {
+    background-color: #211c42;
+    padding: 8px;
+    border-radius: 12px;
+    
+    margin-top: 70px;
+}
+
+.button-panel {
+    align-content: center;
+    background-color: rgba(83, 83, 83, 0.346);
+    align-content: space-between;        
+    color: whitesmoke;
+    padding: 15px;  
+    border-spacing: 1px;
+    border-radius: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: 3%;
+}
+.panel a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .panel a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+@media screen and (max-width: 700px) {
+    .panel {
+        font-size: 80%;
+        display: flex ;
+        width: auto;
+        height: 130px;
+        position: relative;
+        
+    }
+    .button-panel {
+        size: 80%;
+        height: auto;
+        margin-top: 0%;
+        padding: 9px;
+        
+    }
+    .panel-separador-1 {
+        margin-top: 0%;
+    }
+    .panel-separador-2 {
+        margin-top: 0%;
+    }
+    .panel a {float: left;}
+    div.main {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .panel a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
 
 .main{
-    display: flex;
-    background: rgba(211, 211, 211, 0.445);
-    top: 25px;
     
-
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    
+    
 }
+
 .card {
     display: block;
     background: linear-gradient(0deg, rgba(9, 59, 80, 0.882) 0%, rgba(1, 8, 36, 0.915) 100%);
-    margin: 7px;
+    margin: 0px;
     align-content: space-between;        
     height: auto; 
     width:auto; 
-    padding: 40px;  
+    padding: 20px;  
     color: azure;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.027) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 12px 12px 15px -1px, rgba(0, 0, 0, 0.027) 0px 1px 3px -1px;
     border-radius: 12px;
   }
 
@@ -84,11 +187,15 @@
     }
     
     .card-content {
+        display: flex;
+        align-items: center;
         padding: 20px;
         
     }
 
     .card-btn {
+
+        align-content: center;
         background-color: rgba(83, 83, 83, 0.346);
         align-content: space-between;        
         color: whitesmoke;
@@ -108,16 +215,16 @@
         box-shadow: 0px 5px 25px rgba(151, 150, 150, 0.2)
     }
 
-    .footer{
-        background-color: rgba(2, 15, 24, 0.882);
-        color: seashell;
-        position: fixed;
-        width: 100%;
-        height: 40px;
-        bottom: 0;  
-        margin-left: -10px;
-        padding-left: 10px; 
-    }
+.footer{
+    background-color: rgba(2, 15, 24, 0.882);
+    color: seashell;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0;  
+    margin-left: -10px;
+    padding-left: 10px; 
+}
 
 
 
