@@ -41,9 +41,10 @@
 }
 .a-icon{
     align-items: center;
+    margin-top: 10px;
     flex: auto;
     justify-content: space-around;
-    height: 60px;
+    height: 45px;
     width: auto;
     
 }
@@ -77,7 +78,7 @@
     
 }
 .panel-separador-2 {
-    background-color: #211c42;1
+    background-color: #211c42;
     padding: 8px;
     border-radius: 12px;
     
@@ -137,6 +138,8 @@
         padding: 9px;
         
     }
+
+    /** CONTENEDORES DE POSTEO **/
     .panel-separador-1 {
         margin-top: 0%;
     }
@@ -151,69 +154,74 @@
         height: auto;
     }
     .videoNotas {
-        width: fit-content;
-        height: fit-content;
+        display: block;
+        width: auto;
+        height: auto;
+        
     }
+    .card-description {
+        display: block;
+        color: greenyellow ;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
-  .panel a {
+  .panel-a {
     text-align: center;
     float: none;
   }
-  
 }
 
+    .main{
+        
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+        
+        
+    }
 
-
-
-.main{
-    
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-    
-    
-}
-
-.card {
-    display: block;
-    background: linear-gradient(0deg, rgba(9, 59, 80, 0.882) 0%, rgba(1, 8, 36, 0.915) 100%);
-    margin: 12px;
-    align-content: space-between;        
-    height: auto; 
-    width:auto; 
-    padding: 20px;  
-    color: azure;
-    box-shadow: rgba(50, 50, 93, 0.25) 12px 12px 15px -1px, rgba(0, 0, 0, 0.027) 0px 1px 3px -1px;
-    border-radius: 12px;
-  }
+    .card {
+        display: block;
+        background: linear-gradient(0deg, rgba(9, 59, 80, 0.882) 0%, rgba(1, 8, 36, 0.915) 100%);
+        margin: 12px;
+        align-content: space-between;        
+        height: auto; 
+        width:auto; 
+        padding: 20px;  
+        color: azure;
+        box-shadow: rgba(50, 50, 93, 0.25) 12px 12px 15px -1px, rgba(0, 0, 0, 0.027) 0px 1px 3px -1px;
+        border-radius: 12px;
+    }
 
     .card-title {
 
-        
+        display: flex;
+        flex-direction: row;
         background-color:rgba(33, 54, 63, 0.692);
         padding: 5px;
         border-radius: 30px;
         
 
     }
-    
+
     .card-content {
-        display: flex;
+        
         align-items: center;
         padding: 20px;
         
     }
     .card-description {
-        flex: 25%;
-        padding: 20px;
+        display: inline;
+        flex-direction: row;
+        color: whitesmoke;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 8px;
         margin-left: opx;
         background:rgba(75, 73, 73, 0.23);
     }
-
     .card-btn {
-
         align-content: center;
         background-color: rgba(83, 83, 83, 0.346);
         align-content: space-between;        
@@ -223,7 +231,6 @@
         border-radius: 10%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
-
     .card-btn:hover{
         background-color: rgba(83, 83, 83, 0.446);
         align-content: space-between;        
@@ -232,6 +239,14 @@
         border-spacing: 7px;
         border-radius: 17%;
         box-shadow: 0px 5px 25px rgba(151, 150, 150, 0.2)
+    }
+    .videoNotas {
+        display: block;
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+        ;
+        
     }
 
 
