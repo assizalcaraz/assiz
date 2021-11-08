@@ -154,7 +154,7 @@
         height: auto;
     }
     .videoNotas {
-        display: block;
+        display: inline-block;
         width: auto;
         height: auto;
         
