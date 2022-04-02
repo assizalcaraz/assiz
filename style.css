@@ -96,6 +96,16 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 3%;
 }
+.button-demo {
+    align-content: center;
+    background-color: blue(83, 83, 83, 0.346);        
+    color: whitesmoke;
+    padding: 15px;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    margin-top: 50px;
+    
+}
 .panel a {
     display: block;
     color: white;
@@ -242,9 +252,10 @@
         box-shadow: 0px 5px 25px rgba(151, 150, 150, 0.2)
     }
     .videoNotas {
-        display: block;
-        width: auto;
-        height: auto;
+        display: none;
+        width: 1080;
+        height: 1920;
+        margin: 150px;
         align-items: flex-start;
         ;
         
